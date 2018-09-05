@@ -1,0 +1,42 @@
+<!-- 
+	JWT 2018
+	Matti Luiro
+-->
+
+<!DOCTYPE html>
+<html class="h-100" lang="fi">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+			integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		 <link rel="stylesheet" type="text/css" href="css/ht.css">
+		 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+		<title>Harjoitustyö</title>
+	</head>
+	<body class="h-100">
+		<div class="container-fluid h-100">
+			<div class="row h-100">
+				<div class="col-8 h-100 p-0" id="pelialue">
+				</div>
+				<div class="col-4 h-100 pr-0 mr-0" id="kontrollialue">
+					<div class="mb-4 pr-0 mr-0" id="tiedot">
+						<h2 class="m-2 p-1  text-center">JWT Seikkailupeli</h2>
+						<div class="m-0 p-1  text-center" id="alustusDiv"><button class="btn btn-primary btn-md m-1 p-1" type="button" id="kentanAlustus" value="alusta" onclick="alustaKentta()">Alusta</button></div>
+						<div class="m-1 p-1  text-center" id="ennatysDiv"><b>Ennätys: <span id="ennatys">--:--:---</span></b><br>Tekijä: <span id="tekija">-</span></div>
+						<div class="m-1 p-1  text-center" id="aika"></div>
+						<div class="bg-success text-white p-1 pl-3 mb-1 mr-0" onclick="vaihdaNimi()"><b>Nimi:</b> <span id="nimi">Nimetön</span><br></div>
+						<div class="bg-info text-white p-1 pl-3 mr-0"><b>Raha:</b> <span id="pisteet">$0</span></div>		
+					</div>
+					<div class="text-center m-0 p-0" id="napit">
+						<button class="btn btn-primary btn-md m-3 p-1" type="button" id="up" value="up" onclick="liiku(this.value)">Ylös</button>
+						<button class="btn btn-primary btn-md m-3 p-1" type="button" id="down" value="down" onclick="liiku(this.value)">Alas</button>
+						<button class="btn btn-primary btn-md m-3 p-1" type="button" id="left" value="left" onclick="liiku(this.value)">Vasen</button> 
+						<button class="btn btn-primary btn-md m-3 p-1" type="button" id="right" value="right" onclick="liiku(this.value)">Oikea</button> 
+					</div>	
+				</div>
+			</div>
+		</div>
+		<script src="js/ht.js"></script> 
+	</body>
+</html>

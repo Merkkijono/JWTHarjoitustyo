@@ -1,0 +1,41 @@
+/*	JWT 2018
+ *	Matti Luiro
+*/
+
+@media (max-width: 576px){
+	h2 {
+		font-size: 125%;
+	}
+	div {
+		font-size: 90%;
+	}
+	.btn {
+		font-size: 10px;
+	}
+}
+
+#pelialue img {
+	max-height: 75%;
+	max-width: 75%;
+}
+
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+h2 {
+	font-family: 'Indie Flower', cursive;
+}
+
+.btn {
+	width: 50%;
+}
+
+#uusi {
+	width: 20%;
+}
